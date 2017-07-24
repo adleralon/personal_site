@@ -144,7 +144,7 @@ h2{
     -o-transition:width 500ms ease-in-out, height 500ms ease-in-out;
     transition:width 500ms ease-in-out, height 500ms ease-in-out;
 	opacity: 0.5;
-	background-image: url(../images/work.png);
+	background-image: url(../images/work2.png);
     background-repeat: no-repeat;
 	/*background-position: left center;*/
 	background-position: 10%; 
@@ -160,7 +160,7 @@ h2{
 }
 
 #hobbies {
-	background-image: url(../images/hobbies.png);
+	background-image: url(../images/hobbies2.png);
     background-repeat: no-repeat;
 	/*background-position: left center;*/
 	background-position: 30% 20%; 
