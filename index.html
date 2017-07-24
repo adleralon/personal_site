@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Alon Adler</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<script>
+	function setVisible(element)
+	{
+		document.getElementById(element).style.display = "inline-block";
+		var test = document.querySelectorAll("div div.inner");
+		test[0].style.display = "block";
+		test[1].style.display = "block";
+	}
+
+	function setInvisible(element)
+	{
+		document.getElementById(element).style.display = "none";
+		var test = document.querySelectorAll("div div.inner");
+		test[0].style.display = "none";
+		test[1].style.display = "none";
+	}
+	</script>
+
+	<body id="home">
+		<div style="text-align: center; margin-top: 50px;">
+		<span style='color: #ff8c00; font-size: 16px; letter-spacing: 2px;'> A family man, FullStack Developer, Business Analyst and a Redhead getting <kbd>CTRL</kbd><span style="margin-left:3px;	color:black;"]]>+</span><kbd>B</kbd>. Here's: </span>
+			<h1 id="mainHeader" >Three rectangles about myself</h1>
+		</div>
+		<br/>
+		<br/>
+		<div style="width:100%;">
+			<div style="margin-left:auto;margin-right:auto;width:90%; position: relative; text-align: center;">
+				<div class ="family" style="">
+					<h2> Family </h2>
+				</div>
+				<div class="work" style="" onmouseover="setVisible('LinkedIn');setVisible('sof');" onmouseout="setInvisible('LinkedIn');setInvisible('sof');">
+					<h2> Work </h2>
+					<div class="inner">
+						<a href="https://www.linkedin.com/in/alonadler" target="_blank">
+							<img class="imgLogo" border="0" id="LinkedIn" alt="LinkedIn" src="logos/linkedin.png" width="100" height="100" style="display:none;">
+						</a>
+						<a href="https://stackoverflow.com/users/908624/alon-adler?tab=profile" target="_blank">
+							<img class="imgLogo" border="0" id="sof" alt="stackoverflow" src="logos/sof.png" width="100" height="100" style="display:none;">	
+						</a>
+					</div>
+				</div>
+				<div class ="info" id="hobbies" style="" onmouseover="setVisible('youtube');setVisible('facebook');setVisible('flickr');" onmouseout="setInvisible('youtube');setInvisible('facebook');setInvisible('flickr');">
+					<h2> Hobby </h2>
+					<div class="inner">
+						<a href="https://www.facebook.com/alon.adler.83" target="_blank">
+							<img class="imgLogo" border="0" id="facebook" alt="facebook" src="logos/facebook.png" width="100" height="100" style="display:none;">	
+						</a>
+						<a href="https://www.youtube.com/channel/UCFHovr5YGeXYBQy5nszOYhQ" target="_blank">
+							<img class="imgLogo" border="0" id="youtube" alt="youtube" src="logos/youtube.png" width="100" height="100" style="display:none;">
+						</a>
+						<a href="https://www.flickr.com/photos/alon_a/" target="_blank">
+							<img class="imgLogo" border="0" id="flickr" alt="flickr" src="logos/flickr.png" width="100" height="100" style="display:none;">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--
+		<p>
+			<script type="text/javascript">
+			//<![CDATA[
+			<!--
+				var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+				"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+				" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!05{)rt{y+xx=l;=+;" +
+				"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+				"\"(0),5\\\"\\\\|vcpvki&!yb.)-S^2X00\\\\\\\\31\\\\0f\\\\]KR[4t02\\\\\\\\]]q]" +
+				"17\\\\0B\\\\MDoF13\\\\0t\\\\32\\\\0C\\\\PIVJ01\\\\02\\\\00\\\\\\\\sC7r17\\\\"+
+				"\\\\v5yp4z00\\\\\\\\\\\"\\\\\\\\\\\\27\\\\05\\\\00\\\\\\\\p;33;7=+2;n4&<9=#" +
+				".0o02\\\\\\\\,v:,f/x$ja,/JZNT4L02\\\\\\\\VM[RW@\\\\\\\\\\\\\\\\\\\\V(\\\"}f" +
+				"o;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomfrg.intr=So+7;12%=;y=iy+0)=5i=f" +
+				"({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontincfu)\\\""+
+				"\")"                                                                         ;
+				while(x=eval(x));
+			//-->
+			
+		<!--	//]]> </script>
+		</p>-->
+
+	</body>
+</html>

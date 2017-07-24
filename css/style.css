@@ -1,0 +1,270 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 */
+
+html,body,div,span,applet,object,iframe,
+h1,h3,h4,h5,h6,p,blockquote,pre,abbr,acronym,address,big,cite,code,
+del,dfn,em,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+	background: beige;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+h2{
+	color: #ff8c00;
+    font-family: 'Helvetica Neue', sans-serif;
+    /* font-size: 12px; */
+    font-weight: bold;
+    /* line-height: 24px; */
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: #4c4c27 1px 1px;
+    text-transform: uppercase;
+	margin-top: 15px;
+}
+
+
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+.container{
+  width: 100%;
+  height: 100%;
+  margin-left:auto;margin-right:auto;
+}
+
+.info {
+	display:inline-block;
+	text-align: center;
+    width:	10%;
+    height:	50px;
+    background: #f34543;
+	margin-right: 30px;
+	
+	
+    -webkit-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    -moz-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    -o-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    transition:width 500ms ease-in-out, height 500ms ease-in-out;
+	opacity: 0.5;
+}
+.info:hover {
+	position: relative;
+	z-index:	100;
+    width:	50%;
+    height:	600px;
+	background: green;
+	opacity: 1;
+}
+
+.family {
+	display:inline-block;
+	text-align: center;
+    width:	10%;
+    height:	50px;
+    -webkit-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    -moz-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    -o-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    transition:width 500ms ease-in-out, height 500ms ease-in-out;
+	opacity: 0.5;
+	background-image: url(../images/family.png);
+    background-repeat: no-repeat;
+	/*background-position: left center;*/
+	background-position:; 
+    box-shadow: 10px 10px 5px #888888;
+	margin-right: 30px;
+}
+.family:hover {
+	position: relative;
+	z-index:	100;
+    width:	400px;
+    height:	760px;
+	opacity: 1;
+}
+
+.work {
+	display:inline-block;
+	text-align: center;
+    width:	10%;
+    height:	50px;
+    -webkit-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    -moz-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    -o-transition:width 500ms ease-in-out, height 500ms ease-in-out;
+    transition:width 500ms ease-in-out, height 500ms ease-in-out;
+	opacity: 0.5;
+	background-image: url(../images/work.png);
+    background-repeat: no-repeat;
+	/*background-position: left center;*/
+	background-position: 10%; 
+    box-shadow: 10px 10px 5px #888888;
+	margin-right: 30px;
+}
+.work:hover {
+	position: relative;
+	z-index:	100;
+    width:	50%;
+    height:	600px;
+	opacity: 1;
+}
+
+#hobbies {
+	background-image: url(../images/hobbies.png);
+    background-repeat: no-repeat;
+	/*background-position: left center;*/
+	background-position: 30% 20%; 
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#mainHeader{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h1,
+
+h1 a,
+
+h1 a:visited { font-family: Georgia, arial, serif; font-size: 28px; color: darkorange;}
+
+.imgLogo{
+    display:inline-block;
+    margin:5px 20px;
+    padding:5px;
+    border:0px solid #CCC;
+	opacity:0.5;
+}
+
+img.imgLogo:hover{
+	opacity: 1.0;
+}
+
+div.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 100px;
+    -webkit-transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
+	background: transparent;
+  
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .info {
+        display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/* width: 90%; */
+		text-align: center;
+		width: 120px;
+    }
+	.work{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/* width: 90%; */
+		text-align: center;
+		width: 120px;
+	}
+	.family{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/* width: 90%; */
+		text-align: center;
+		width: 120px;
+	}
+	
+	div.inner {
+		top: 30%;
+	}
+}
+
+
+
+
+
+/*///////////////////*/
+
+a{
+	color: #12BAB7;
+    text-decoration: none;
+	font-weight: 500;
+	font-family: filson-soft, sans-serif;
+	line-height: 1.625;
+}
+
+
+kbd
+{
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    background-color:#f7f7f7;
+    border:1px solid #ccc;
+    border-radius:3px;
+    box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    color:#333;
+    display:inline-block;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:11px;
+    line-height:1.4;
+    margin:0 .1em;
+    padding:.1em .6em;
+    text-shadow:0 1px 0 #fff;
+}
